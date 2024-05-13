@@ -1,0 +1,10 @@
+{
+  "workbench.colorTheme": "Palenight Theme",
+  "files.autoSave": "onFocusChange",
+  // Prettier
+  "editor.defaultFormatter": "ms-vscode.cpptools",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+}

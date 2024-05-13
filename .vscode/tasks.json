@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build hello world",
+      "type": "shell",
+      "command": "g++",
+      "args": ["-g", "Classes/BaseCharacter.cpp", "-o", "Builds/run"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "g++",
+      "args": ["-g", "tests.cpp", "-o", "Builds/tests", "-lgtest", "-lgtest_main", "-pthread"],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "label": "build and test",
+      "dependsOn": ["build", "test"]
+    }
+  ]
+}
